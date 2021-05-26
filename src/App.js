@@ -3,6 +3,9 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 
 import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/Nav'
+
+import About from './pages/About'
+
 function App() {
   const location = useLocation()
 
@@ -10,7 +13,11 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <h1>Hello from react</h1>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path='/' >
+          <About />
+        </Route>
+      </Switch>
     </div>
   );
 }

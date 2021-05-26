@@ -15,6 +15,12 @@ body {
     font-family: 'Noto Sans', sans-serif;
     overflow-x: hidden;
     color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+section {
+    padding: 80px 0;
 }
 
 @media only screen and (max-width: 1023px) {

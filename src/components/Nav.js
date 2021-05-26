@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link, useLocation } from 'react-router-dom'
 import { Row, Col } from '../styles'
+import logo from '../img/logo.png'
 const Nav = () => {
     return (
         <nav>
@@ -20,7 +21,7 @@ const StyledNav = styled.ul`
     float:right;
     list-style: none;
     margin-top: 55px;
-    background-color: coral;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
     li{
         display: inline;
         margin-left: 40px;
