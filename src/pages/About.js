@@ -11,20 +11,17 @@ const About = () => {
             </StyledHeader>
             <StyledSection>
                 <Row>
-                    <h2>Premise</h2>
+                    <h2 data-aos='fade-up'>Premise</h2>
                 </Row>
                 <Row>
-                    <Col>
-                        <SPAN_1_OF_2>
-                            <p>Released in 1998 on the original Playstation, <em>Parasite Eve</em> was the first M-Rated game released by Squaresoft (now known as Square Enix). It is an American biological horror themed turn-based RPG.
-                        It serves as a detached sequel to the novel written by Hideaki Sena, although it is not necessary to read nor watch its film adaptation and instead serves as a backstory of the similar incident in Japan.</p>
-                        </SPAN_1_OF_2>
-                    </Col>
-                    <Col>
-                        <SPAN_1_OF_2>
-                            <StyledPortrait src={Cover} />
-                        </SPAN_1_OF_2>
-                    </Col>
+                    <SPAN_1_OF_2>
+                        <p>Released in 1998 on the original Playstation, <em>Parasite Eve</em> was the first M-Rated game released by Squaresoft (now known as Square Enix). It is an American biological horror themed turn-based RPG.
+                        It serves as a detached sequel to the novel written by Hideaki Sena, although it is not necessary to read nor watch its film adaptation and instead serves as a backstory of the similar incident in Japan.
+                        Nearly 1 million copies were sold in Japan in the first half of 1998 and had shipped over 1.94 million copies as of Februrary 2004.</p>
+                    </SPAN_1_OF_2>
+                    <SPAN_1_OF_2>
+                        <StyledPortrait src={Cover} />
+                    </SPAN_1_OF_2>
                 </Row>
             </StyledSection>
         </div>
@@ -43,13 +40,13 @@ const StyledHeroText = styled.div`
     left: 50%;
 `
 const StyledSection = styled.section`
-
+    line-height: 1.5;
 `
 const StyledPortrait = styled.img`
     border-radius: 8px;
-    width: 80%;
-    height: auto;
+    max-width: 100%;
+    max-height: auto;
     border: 1px solid #fff;
-    padding: 2px;
+    padding: 5px;
 `
 export default About
