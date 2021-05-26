@@ -32,6 +32,13 @@ h2 {
     margin: 10px;
     text-align: center;
 }
+h3 {
+    font-size: 150%;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 22px;
+    font-weight: 100;
+}
 h1:after {
     display: block;
     height: 1.5px;
@@ -43,7 +50,9 @@ h2:after {
     height: 2px;
     content:"";
     width: 100px;
+    margin: 0 auto;
     margin-top: 30px;
+    background-color: #E8E8E8;
 }
 h1:hover + h1:after {
     width: 50%;

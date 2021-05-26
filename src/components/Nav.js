@@ -11,6 +11,7 @@ const Nav = () => {
                     <li><Link to='/'>About</Link></li>
                     <li><Link to='/'>Story</Link></li>
                     <li><Link to='/'>Cast</Link></li>
+                    <li><Link to='/'>Gameplay</Link></li>
                 </StyledNav>
             </Row>
         </nav>
