@@ -22,7 +22,32 @@ body {
 section {
     padding: 80px 0;
 }
-
+h1 {
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 180%;
+    letter-spacing: 1.2px;
+    margin: 10px;
+    text-align: center;
+}
+h1:after {
+    display: block;
+    height: 1.5px;
+    content:"";
+    width: 1%;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    content:"";
+    width: 100px;
+    margin-top: 30px;
+}
+h1:hover + h1:after {
+    width: 50%;
+    content: "";
+}
 @media only screen and (max-width: 1023px) {
     body {
         font-size: 16px;

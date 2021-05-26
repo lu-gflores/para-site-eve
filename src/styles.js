@@ -26,3 +26,16 @@ export const Col = styled.div`
         margin: 0;
     }
 `
+// Grid of 2
+export const SPAN_2_OF_2 = styled.div`
+    width: 100%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_1_OF_2 = styled.div`
+    width: 49.2%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
