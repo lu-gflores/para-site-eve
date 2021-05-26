@@ -9,7 +9,9 @@ export const Row = styled.div`
     :after {
         clear: both;
     }
-
+    @media only screen and (max-width: 1200px) {
+        padding: 0 2%;
+    }
 `
 export const Col = styled.div`
     display: block;

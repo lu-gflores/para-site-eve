@@ -17,6 +17,25 @@ body {
     color: #fff;
 }
 
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    } 
+    section {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 180px) {
+    section {
+        padding: 25px 0;
+    }
+}
 `
 
 export default GlobalStyle
