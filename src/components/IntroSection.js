@@ -29,7 +29,7 @@ const IntroSection = () => {
                 </Row>
             </StyledIntro>
 
-            <StyledIntro>
+            <StyledDuo>
                 <Row>
                     <Row>
                         <h2>Parasite Eve I & Parasite Eve II</h2>
@@ -48,7 +48,7 @@ const IntroSection = () => {
 
                     </Row>
                 </Row>
-            </StyledIntro>
+            </StyledDuo>
         </>
     )
 }
@@ -61,7 +61,18 @@ const StyledContext = styled.div`
 `
 const StyledIntro = styled.section`
     line-height: 1.5;
+    h2,h3 {
+        font-family: 'Century Gothic', sans-serif;
+    }
 `
+const StyledDuo = styled.section`
+    line-height: 1.5;
+    background: linear-gradient(171deg, rgba(187,190,187,1) 17%, rgba(104,170,157,0.9612219887955182) 54%, rgba(213,219,215,1) 86%);
+    color: #000;
+    h2,h3 {
+        font-family: 'Century Gothic', sans-serif;
+    }
+    `
 const StyledPortrait = styled.img`
     border-radius: 8px;
     width: 100%;
