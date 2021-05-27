@@ -8,11 +8,14 @@ export const Row = styled.div`
         content: "";
         display: table;
     }
-    /* :after {
+    :after {
         clear: both;
-    } */
+    }
     @media only screen and (max-width: 1200px) {
         padding: 0 2%;
+    }
+    @media only screen and (max-width: 767px) {
+        padding: 0 4%;
     }
 `
 export const Col = styled.div`

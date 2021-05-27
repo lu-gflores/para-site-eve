@@ -28,23 +28,27 @@ const IntroSection = () => {
                     </SPAN_1_OF_2>
                 </Row>
             </StyledIntro>
-            <section>
+
+            <StyledIntro>
                 <Row>
                     <Row>
-                        <h2>Parasite I & Parasite II</h2>
+                        <h2>Parasite Eve I & Parasite Eve II</h2>
                     </Row>
                     <Row>
                         <BoxImg>
                             <img src={eve1} alt='cutscene' />
-
+                            <h3>Parasite Eve I</h3>
+                            <p>In 1997, NYPD officer Aya Brea attemps to stop Eve, a mysterious woman who plans to eradicate humanity through spontaenous combustion.</p>
                         </BoxImg>
                         <BoxImg>
                             <img src={eve2} alt='cutscene' />
+                            <h3>Parasite Eve II</h3>
+                            <p>Three years after the events of <em>Parasite Eve I</em>, Aya is pulled into another adventure where enemies she previously encountered are in the American Southwest.</p>
                         </BoxImg>
 
                     </Row>
                 </Row>
-            </section>
+            </StyledIntro>
         </>
     )
 }
@@ -69,7 +73,8 @@ const BoxImg = styled(SPAN_1_OF_2)`
     padding: 1%;
     img {
         width: 100%;
-        height: auto;
+        height: 350px;
+        border-radius: 20px;
         margin-bottom: 16px;
 }
 `

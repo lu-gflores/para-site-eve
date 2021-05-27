@@ -63,7 +63,7 @@ h1:hover + h1:after {
         font-size: 16px;
     } 
     section {
-        padding: 30px;
+        padding: 60px;
     }
     h1 {
         font-size: 180%;
