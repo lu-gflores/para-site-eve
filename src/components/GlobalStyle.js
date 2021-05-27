@@ -72,7 +72,21 @@ h1:hover + h1:after {
         font-size: 150%;
     }
 }
-@media only screen and (max-width: 180px) {
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 480px) {
     section {
         padding: 25px 0;
     }

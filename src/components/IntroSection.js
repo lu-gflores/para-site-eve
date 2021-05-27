@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, SPAN_1_OF_2 } from '../styles'
+import { Row, Col, SPAN_1_OF_2 } from '../styles'
 import Cover from '../img/PE1.png'
 import eve1 from '../img/eve1.jpg'
 import eve2 from '../img/eve2.jpg'
@@ -28,24 +28,23 @@ const IntroSection = () => {
                     </SPAN_1_OF_2>
                 </Row>
             </StyledIntro>
-            <StyledIntro>
+            <section>
                 <Row>
-                    <h2>Parasite I & Parasite II</h2>
-                </Row>
-                <Row>
-                    <SPAN_1_OF_2>
+                    <Row>
+                        <h2>Parasite I & Parasite II</h2>
+                    </Row>
+                    <Row>
                         <BoxImg>
                             <img src={eve1} alt='cutscene' />
 
                         </BoxImg>
-                    </SPAN_1_OF_2>
-                    <SPAN_1_OF_2>
                         <BoxImg>
                             <img src={eve2} alt='cutscene' />
                         </BoxImg>
-                    </SPAN_1_OF_2>
+
+                    </Row>
                 </Row>
-            </StyledIntro>
+            </section>
         </>
     )
 }
@@ -66,11 +65,11 @@ const StyledPortrait = styled.img`
     border: 1px solid #fff;
     padding: 5px;
 `
-const BoxImg = styled.div`
+const BoxImg = styled(SPAN_1_OF_2)`
     padding: 1%;
     img {
         width: 100%;
-        height: 395px;
+        height: auto;
         margin-bottom: 16px;
 }
 `
