@@ -7,7 +7,15 @@ const Footer = () => {
         <StyledFooter>
             <Row>
                 <SPAN_1_OF_2>
-                    <p>Sample Text</p>
+                    <StyledLinks href='https://www.linkedin.com/in/george-flores-a84b24157/' target='_blank' rel='noreferrer'>
+                        <i className="fab fa-linkedin"></i>
+                    </StyledLinks>
+                    <StyledLinks href='https://github.com/lu-gflores' target='_blank' rel='noreferrer'>
+                        <i className="fab fa-github"></i>
+                    </StyledLinks>
+                    <StyledLinks href='https://twitter.com/lu_gflores' target='_blank' rel='noreferrer'>
+                        <i className="fab fa-twitter"></i>
+                    </StyledLinks>
                 </SPAN_1_OF_2>
                 <SPAN_1_OF_2>
                     <p>Sample Text</p>
@@ -26,6 +34,17 @@ const StyledFooter = styled.footer`
     p, a {
         margin-top: 30px;
         text-align: center;
+    }
+`
+const StyledLinks = styled.a`
+    margin: 0 1.5rem 0 1.5rem;
+    color: white;
+    :hover {
+        color: grey;
+    }
+    i {
+        padding: 0 10px;
+        font-size: 2.5rem;
     }
 `
 
