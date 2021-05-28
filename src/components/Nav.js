@@ -6,14 +6,12 @@ import logo from '../img/logo.png'
 const Nav = () => {
     return (
         <nav>
-            <Row>
-                <StyledNav>
-                    <li><Link to='/'>About</Link></li>
-                    <li><Link to='/'>Story</Link></li>
-                    <li><Link to='/'>Cast</Link></li>
-                    <li><Link to='/'>Gameplay</Link></li>
-                </StyledNav>
-            </Row>
+            <StyledNav>
+                <li><Link to='/'>About</Link></li>
+                <li><Link to='/'>Story</Link></li>
+                <li><Link to='/'>Cast</Link></li>
+                <li><Link to='/'>Gameplay</Link></li>
+            </StyledNav>
         </nav>
     )
 }
@@ -22,6 +20,7 @@ const StyledNav = styled.ul`
     float:right;
     list-style: none;
     margin-top: 55px;
+    margin-right: 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
     li{
         display: inline;

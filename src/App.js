@@ -3,7 +3,7 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 
 import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/Nav'
-
+import Footer from './components/Footer'
 import About from './pages/About'
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <About />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

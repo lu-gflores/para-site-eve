@@ -28,7 +28,6 @@ const IntroSection = () => {
                     </SPAN_1_OF_2>
                 </Row>
             </StyledIntro>
-
             <StyledDuo>
                 <Row>
                     <Row>
