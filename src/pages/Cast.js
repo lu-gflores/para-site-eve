@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Characters from '../components/Characters'
 
 const Cast = () => {
     return (
@@ -9,7 +10,7 @@ const Cast = () => {
                     <h1>Cast</h1>
                 </StyledHeroText>
             </StyledHeader>
-
+            <Characters />
 
         </div>
     )
