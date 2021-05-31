@@ -2,12 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import heroBanner from '../img/hero-header.jpg'
 import IntroSection from '../components/IntroSection'
+import Critics from '../components/Critics'
+
 const About = () => {
     return (
         <div>
             <StyledHeader>
             </StyledHeader>
             <IntroSection />
+            <Critics />
         </div>
     )
 }
