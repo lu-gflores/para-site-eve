@@ -1,10 +1,11 @@
 import React from 'react'
 import { Switch, Route, useLocation } from 'react-router-dom'
 
+import About from './pages/About'
+import Cast from './pages/Cast'
 import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import About from './pages/About'
 
 function App() {
   const location = useLocation()
@@ -16,6 +17,9 @@ function App() {
       <Switch location={location} key={location.pathname}>
         <Route exact path='/' >
           <About />
+        </Route>
+        <Route exact path='/cast'>
+          <Cast />
         </Route>
       </Switch>
       <Footer />
