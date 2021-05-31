@@ -43,3 +43,49 @@ export const SPAN_1_OF_2 = styled(Col)`
     width: 100%;
     }
 `
+
+// Grid of 3
+export const SPAN_1_OF_3 = styled(Col)`
+    width: 32.26%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_2_OF_3 = styled(Col)`
+    width: 66.13%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_3_OF_3 = styled(Col)`
+    width: 100%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+
+// Grid of 4
+export const SPAN_1_OF_4 = styled(Col)`
+    width: 23.8%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_2_OF_4 = styled(Col)`
+    width: 49.2%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_3_OF_4 = styled(Col)`
+    width: 74.6%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
+export const SPAN_4_OF_4 = styled(Col)`
+    width: 100%;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`
