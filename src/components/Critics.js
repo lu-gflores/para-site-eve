@@ -11,29 +11,35 @@ const Critics = () => {
             </Row>
             <Row>
                 <SPAN_1_OF_3>
-                    <p><em>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                        Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                        Etiam congue diam non tempus consequat.
-                </em></p>
+                    <StyledText>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
+                            Etiam congue diam non tempus consequat.
+                        </p>
+                    </StyledText>
                     <br />
                     <p>- Critic</p>
                 </SPAN_1_OF_3>
                 <SPAN_1_OF_3>
-                    <p><em>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                        Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                        Etiam congue diam non tempus consequat.
-                </em></p>
+                    <StyledText>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
+                            Etiam congue diam non tempus consequat.
+                        </p>
+                    </StyledText>
                     <br />
                     <p>- Critic</p>
                 </SPAN_1_OF_3>
                 <SPAN_1_OF_3>
-                    <p><em>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                        Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                        Etiam congue diam non tempus consequat.
-                </em></p>
+                    <StyledText>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
+                            Etiam congue diam non tempus consequat.
+                        </p>
+                    </StyledText>
                     <br />
                     <p>- Critic</p>
                 </SPAN_1_OF_3>
@@ -46,6 +52,14 @@ const StyledCritics = styled.section`
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+`
+const StyledText = styled.div`
+    line-height: 1.5;
+    margin-top: 13px;
+    p {
+        font-weight: 100;
+        font-style: italic;
+    }
 
 `
 export default Critics
