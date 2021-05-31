@@ -9,6 +9,8 @@ const Cast = () => {
                     <h1>Cast</h1>
                 </StyledHeroText>
             </StyledHeader>
+
+
         </div>
     )
 }
