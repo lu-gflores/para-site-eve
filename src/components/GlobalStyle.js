@@ -14,7 +14,8 @@ html {
 body {
     background: #1b1b1b;
     overflow-x: hidden;
-    font-family: 'Noto Sans', sans-serif;
+    ${'' /* font-family: 'Noto Sans', sans-serif; */}
+    font-family: 'Century Gothic', sans-serif;
     color: #fff;
     font-weight: 300;
     font-size: 20px;
@@ -25,12 +26,14 @@ section {
 }
 h1 {
     letter-spacing: 2px;
+    font-family: 'Century Gothic', sans-serif
 }
 h2 {
     font-size: 180%;
     letter-spacing: 1.2px;
     margin: 10px;
     text-align: center;
+    font-family: 'Century Gothic', sans-serif
 }
 h3 {
     font-size: 150%;
@@ -38,6 +41,7 @@ h3 {
     text-align: center;
     margin-bottom: 22px;
     font-weight: 100;
+    font-family: 'Century Gothic', sans-serif
 }
 h1:after {
     display: block;

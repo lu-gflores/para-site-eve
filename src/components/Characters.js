@@ -5,9 +5,18 @@ import Aya from '../img/characters/aya.png'
 import Eve from '../img/characters/eve.png'
 import Daniel from '../img/characters/Daniel.png'
 import Maeda from '../img/characters/Maeda.png'
+import Pierce from '../img/characters/Pierce.png'
+import Rupert from '../img/characters/Rupert.png'
+import Kyle from '../img/characters/kyle.png'
+import Jodie from '../img/characters/Jodie.png'
+import Flint from '../img/characters/Flint.png'
+
 const Characters = () => {
     return (
         <div>
+            <section>
+                <h2>Parasite Eve</h2>
+            </section>
             <StyledSection1>
                 <Row>
                     <h1>Aya Brea</h1>
@@ -76,6 +85,13 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                 </Row>
             </StyledSection2>
+
+            <section>
+                <h2>Parasite Eve II</h2>
+            </section>
+            <StyledSection1>
+
+            </StyledSection1>
         </div>
     )
 }
@@ -84,6 +100,7 @@ const StyledSection1 = styled.section`
     line-height: 1.5;
     background-color: red;
     img {
+        margin: 10px 0 5px 0;
         width: 100%;
         height: 520px;
     }
@@ -92,6 +109,7 @@ const StyledSection2 = styled.section`
     line-height: 1.5;
     background-color: #000;
     img {
+        margin: 10px 0 5px 0;
         width: 100%;
         height: 520px;
     }
