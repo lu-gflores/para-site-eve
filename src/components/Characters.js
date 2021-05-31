@@ -90,7 +90,89 @@ const Characters = () => {
                 <h2>Parasite Eve II</h2>
             </section>
             <StyledSection1>
-
+                <Row>
+                    <h1>Rupert Broderick</h1>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_3>
+                        <img src={Rupert} alt='Broderick' />
+                    </SPAN_1_OF_3>
+                    <SPAN_2_OF_3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
+                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                        </p>
+                    </SPAN_2_OF_3>
+                </Row>
+            </StyledSection1>
+            <StyledSection2>
+                <Row>
+                    <h1>Pierce Carradine</h1>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_3>
+                        <img src={Pierce} alt='Pierce Carradine' />
+                    </SPAN_1_OF_3>
+                    <SPAN_2_OF_3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
+                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                        </p>
+                    </SPAN_2_OF_3>
+                </Row>
+            </StyledSection2>
+            <StyledSection1>
+                <Row>
+                    <h1>Kyle Madigan</h1>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_3>
+                        <img src={Kyle} alt='Kyle Madigan' />
+                    </SPAN_1_OF_3>
+                    <SPAN_2_OF_3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
+                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                        </p>
+                    </SPAN_2_OF_3>
+                </Row>
+            </StyledSection1>
+            <StyledSection2>
+                <Row>
+                    <h1>Jodie Bouquet</h1>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_3>
+                        <img src={Jodie} alt='Jodie Bouquet' />
+                    </SPAN_1_OF_3>
+                    <SPAN_2_OF_3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
+                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                        </p>
+                    </SPAN_2_OF_3>
+                </Row>
+            </StyledSection2>
+            <StyledSection1>
+                <Row>
+                    <h1>Flint</h1>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_3>
+                        <img src={Flint} alt='Flint, the goodest boy' />
+                    </SPAN_1_OF_3>
+                    <SPAN_2_OF_3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
+                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
+                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                        </p>
+                    </SPAN_2_OF_3>
+                </Row>
             </StyledSection1>
         </div>
     )
