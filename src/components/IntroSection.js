@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, Col, SPAN_1_OF_2 } from '../styles'
+import { Row, SPAN_1_OF_2, SPAN_2_OF_2 } from '../styles'
 import Cover from '../img/PE1.png'
+import introImg from '../img/intro.jpg'
 import eve1 from '../img/eve1.jpg'
 import eve2 from '../img/eve2.jpg'
 
@@ -13,6 +14,7 @@ const IntroSection = () => {
                     <StyledContext>
                         <h2>Experience the classic horror RPG</h2>
                         <p>Experience the duology of Aya Brea who possesses abnormal abilities due to changes in her mitochondria.</p>
+                        <StyledIntroImage></StyledIntroImage>
                     </StyledContext>
                 </Row>
                 <Row>
@@ -57,6 +59,16 @@ const StyledContext = styled.div`
     p {
         text-align: center;
     }
+`
+const StyledIntroImage = styled.div`
+    margin: 1.9rem 0 1.5rem 0; 
+    background-image: url(${introImg});
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
 `
 const StyledIntro = styled.section`
     line-height: 1.5;

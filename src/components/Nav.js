@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link, useLocation } from 'react-router-dom'
 import { Row, Col } from '../styles'
 import logo from '../img/logo.png'
+
 const Nav = () => {
+    // const [expand, setExpand] = useState(false)
+
+    // const handleToggle = e => {
+
+    // }
+
     return (
         <nav>
             <StyledNav>
