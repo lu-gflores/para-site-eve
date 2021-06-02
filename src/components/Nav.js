@@ -17,7 +17,7 @@ const Nav = () => {
                 <li><Link to='/'>About</Link></li>
                 <li><Link to='/'>Story</Link></li>
                 <li><Link to='/cast'>Cast</Link></li>
-                <li><Link to='/'>Gameplay</Link></li>
+                <li><Link to='/gameplay'>Gameplay</Link></li>
             </StyledNav>
         </nav>
     )
