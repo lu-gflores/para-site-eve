@@ -91,6 +91,16 @@ const StyledShowCase1 = styled.ul`
         object-fit: cover;
         opacity: 0.7;
     }
+    @media only screen and (max-width: 1023px) {
+        figure img {
+            height: 180px;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        figure img{
+            height: 100px;
+        }
+    }
 `
 
 export default PE1Gameplay
