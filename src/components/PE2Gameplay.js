@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Row, SPAN_1_OF_3 } from '../styles'
+
 import battle from '../img/Gameplay2/PE2battle.gif'
 import menu from '../img/Gameplay2/PE2Menu.png'
 import area from '../img/Gameplay2/dryfield.jpg'
@@ -41,5 +42,13 @@ const StyledGameplaySection = styled.section`
         margin-bottom: 16px;
     }
 `
-
+const StyledShowCase2 = styled.ul`
+    list-style: none;
+    width: 100%;
+    li {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+`
 export default PE2Gameplay

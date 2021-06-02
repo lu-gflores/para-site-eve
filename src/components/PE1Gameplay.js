@@ -5,6 +5,12 @@ import battle from '../img/Gameplay1/battle.jpg'
 import map from '../img/Gameplay1/map.jpg'
 import menu from '../img/Gameplay1/pe-menu.jpg'
 
+import shot1 from '../img/Gameplay1/pe_shot1.jpg'
+import shot2 from '../img/Gameplay1/pe_shot2.jpg'
+import shot3 from '../img/Gameplay1/pe_shot3.jpg'
+import shot4 from '../img/Gameplay1/pe_shot4.jpg'
+
+
 const PE1Gameplay = () => {
     return (
         <div>
@@ -27,6 +33,30 @@ const PE1Gameplay = () => {
                     </SPAN_1_OF_3>
                 </Row>
             </StyledGameSection>
+            <section>
+                <StyledShowCase1>
+                    <li>
+                        <figure>
+                            <img src={shot1} alt='Screen shot 1' />
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src={shot2} alt='Screen shot 1' />
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src={shot3} alt='Screen shot 1' />
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src={shot4} alt='Screen shot 1' />
+                        </figure>
+                    </li>
+                </StyledShowCase1>
+            </section>
         </div>
     )
 }
@@ -40,6 +70,26 @@ const StyledGameSection = styled.section`
         width: 100%;
         height: 380px;
         margin-bottom: 16px;
+    }
+`
+const StyledShowCase1 = styled.ul`
+    list-style: none;
+    width: 100%;
+    li {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+    figure {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    figure img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        opacity: 0.7;
     }
 `
 
