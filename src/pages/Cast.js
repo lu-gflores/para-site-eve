@@ -23,10 +23,10 @@ const StyledHeader = styled.header`
 const StyledHeroText = styled.div`
     position: absolute;
     top: 30%;
-    left: 15%;
+    left: 12%;
     h1 {
         font-family: 'Century Gothic', sans-serif;
-        font-size: 7rem;
+        font-size: 6rem;
     }
 `
 
