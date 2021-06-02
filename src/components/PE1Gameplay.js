@@ -19,11 +19,11 @@ const PE1Gameplay = () => {
                     </SPAN_1_OF_3>
                     <SPAN_1_OF_3 className='box'>
                         <img src={battle} alt='Encounter' />
-                        <p>As you explore, encounter enemies that underwent mutation by Eve. Using the Active time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
+                        <p>As you explore, encounter enemies that underwent mutation by Eve. Using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
                     </SPAN_1_OF_3>
                     <SPAN_1_OF_3 className='box'>
                         <img src={menu} alt='Game menu' />
-                        <p>Gain experience to level up and unlock hidden abilities thanks to Aya's mitochondria. Alter weapon and armor attributes and carefully manage your resources. Spaces are limited!</p>
+                        <p>Gain experience to level up to unlock her Parasite Energy thanks to Aya's mitochondria. Alter weapon and armor attributes and carefully manage your resources. Spaces are limited!</p>
                     </SPAN_1_OF_3>
                 </Row>
             </StyledGameSection>
