@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PE1Gameplay from '../components/PE1Gameplay'
+import PE2Gameplay from '../components/PE2Gameplay'
 import gameplayBanner from '../img/parasite-eve-in-the-water.jpg'
 
 const Gameplay = () => {
@@ -12,6 +13,7 @@ const Gameplay = () => {
                 </StyledHeroText> */}
             </StyledHeader>
             <PE1Gameplay />
+            <PE2Gameplay />
         </div>
     )
 }

@@ -8,7 +8,6 @@ import menu from '../img/Gameplay1/pe-menu.jpg'
 const PE1Gameplay = () => {
     return (
         <div>
-
             <StyledGameSection>
                 <Row>
                     <h2>Parasite Eve Gameplay</h2>
