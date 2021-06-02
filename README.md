@@ -1,3 +1,17 @@
+# Parasite Eve Game site
+
+## Description
+
+A homage site built in React that contains content based on the cult Playstation 1 classic Parasite Eve
+
+Demo: To Be added
+
+Tech Used:
+
+- [styled-components](https://styled-components.com/)
+- [AOS/Animate On Scroll](https://michalsnik.github.io/aos/)
+- [React-Router-DOM](https://reactrouter.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
