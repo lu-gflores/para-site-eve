@@ -4,6 +4,7 @@ import { Switch, Route, useLocation } from 'react-router-dom'
 import About from './pages/About'
 import Cast from './pages/Cast'
 import Gameplay from './pages/Gameplay'
+import Story from './pages/Story'
 
 import GlobalStyle from './components/GlobalStyle'
 import Nav from './components/Nav'
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route exact path='/gameplay'>
           <Gameplay />
+        </Route>
+        <Route exact path='/story'>
+          <Story />
         </Route>
       </Switch>
       <Footer />
