@@ -42,8 +42,8 @@ const PE1Gameplay = () => {
                     </SPAN_1_OF_2>
                 </Row>
             </StyledGameSection>
-            <section>
-                <StyledShowCase1>
+            <StyledImageSection>
+                <StyledShowCase1 className='clearfix'>
                     <li>
                         <figure>
                             <img src={shot1} alt='Screen shot 1' />
@@ -65,13 +65,15 @@ const PE1Gameplay = () => {
                         </figure>
                     </li>
                 </StyledShowCase1>
-            </section>
+            </StyledImageSection>
         </div>
     )
 }
 
 const StyledGameSection = styled.section`
     line-height: 1.3;
+    color: #000;
+    background: linear-gradient(328deg, rgba(254,252,251,1) 10%, rgba(224,172,185,1) 31%, rgba(167,93,127,1) 48%, rgba(254,252,251,1) 87%);
     p {
         text-align: center;
         padding: 1.5rem 0 1.5rem 0;
@@ -86,9 +88,13 @@ const StyledGameSection = styled.section`
         margin-bottom: 16px;
     }
 `
+const StyledImageSection = styled.section`
+    padding: 0;
+`
 const StyledShowCase1 = styled.ul`
     list-style: none;
     width: 100%;
+    background-color: #000;
     li {
         display: block;
         float: left;
@@ -98,12 +104,16 @@ const StyledShowCase1 = styled.ul`
         width: 100%;
         margin: 0;
         overflow: hidden;
+        background-color: #000;
     }
     figure img {
         width: 100%;
         height: 300px;
         object-fit: cover;
         opacity: 0.7;
+    }
+    .clearfix {
+        display: flow-root;
     }
     @media only screen and (max-width: 1023px) {
         figure img {
