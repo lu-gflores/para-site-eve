@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, SPAN_1_OF_3 } from '../styles'
+import { Row, SPAN_1_OF_2 } from '../styles'
 
 import battle from '../img/Gameplay2/PE2battle.gif'
 import menu from '../img/Gameplay2/PE2Menu.png'
 import area from '../img/Gameplay2/dryfield.jpg'
+import peEnergy from '../img/Gameplay2/parasite-energy.png'
 
 import shot5 from '../img/Gameplay2/shot5.jpg'
 import shot6 from '../img/Gameplay2/shot6.jpg'
@@ -17,20 +18,27 @@ const PE2Gameplay = () => {
             <StyledGameplaySection>
                 <Row>
                     <h2>Parasite Eve II Gameplay</h2>
+                    <p><em>"I don't suppose I'll be fighting any giant cactus creatures?"</em></p>
                 </Row>
                 <Row>
-                    <SPAN_1_OF_3 className='box'>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={area} alt='Mojave, town called Dryfield' />
                         <p>Explore the desert town Dryfield, Nevada, after reports of seeing unusual creatures.</p>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3 className='box'>
+                    </SPAN_1_OF_2>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={battle} alt='firing weapon' />
                         <p>Battle takes place in real-time, so choose whether to engage or avoid enemies. </p>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3 className='box'>
+                    </SPAN_1_OF_2>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={menu} alt='Game menu' />
-                        <p>Having locked away her Parasite Energy, help Aya reawaken her abilities to overcome the horrors that await. Just like the previous game, resources are limited!</p>
-                    </SPAN_1_OF_3>
+                        <p>With a blend of survival horror and rpg elements, gain EXP through battles to raise Aya's stats to survive this adventure.</p>
+                    </SPAN_1_OF_2>
+                    <SPAN_1_OF_2 className='box'>
+                        <img src={peEnergy} alt='Parasite energy menu' />
+                        <p>Having locked away her Parasite Energy, help Aya reawaken her abilities to overcome the horrors that await. This time Parasite Energy is divided in four areas, each based on the player's situtation.</p>
+                    </SPAN_1_OF_2>
                 </Row>
             </StyledGameplaySection>
             <section>
@@ -62,6 +70,10 @@ const PE2Gameplay = () => {
 }
 const StyledGameplaySection = styled.section`
     line-height: 1.5;
+    p{
+        text-align: center;
+        padding: 1.5rem 0 1.5rem 0;
+    }
     .box {
         padding: 1%;
     }
