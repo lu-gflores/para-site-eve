@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import storyBanner from '../img/story-img/storybanner.jpg'
 import PE1Story from '../components/PE1Story'
+import PE2Story from '../components/PE2Story'
 
 const Story = () => {
     return (
@@ -10,6 +11,7 @@ const Story = () => {
                 <h1>Story</h1>
             </StyledHeader>
             <PE1Story />
+            <PE2Story />
         </div>
     )
 }
