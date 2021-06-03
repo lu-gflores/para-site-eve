@@ -25,7 +25,7 @@ const PE1Gameplay = () => {
                     </SPAN_1_OF_3>
                     <SPAN_1_OF_3 className='box'>
                         <img src={battle} alt='Encounter' />
-                        <p>As you explore, encounter enemies that underwent mutation by Eve. Using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
+                        <p>As you explore, encounter enemies that underwent mutation by Eve. In a turn-based combat and using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
                     </SPAN_1_OF_3>
                     <SPAN_1_OF_3 className='box'>
                         <img src={menu} alt='Game menu' />
