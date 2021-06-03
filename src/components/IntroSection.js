@@ -39,12 +39,12 @@ const IntroSection = () => {
                         <BoxImg>
                             <img src={eve1} alt='cutscene' />
                             <h3>Parasite Eve I</h3>
-                            <p>In 1997, NYPD officer Aya Brea attemps to stop Eve, a mysterious woman who plans to eradicate humanity through spontaenous combustion.</p>
+                            <p>In 1997, NYPD officer Aya Brea attempts to stop Eve, a mysterious woman who plans to eradicate humanity through spontaenous combustion.</p>
                         </BoxImg>
                         <BoxImg>
                             <img src={eve2} alt='cutscene' />
                             <h3>Parasite Eve II</h3>
-                            <p>Three years after the events of <em>Parasite Eve I</em>, Aya is pulled into another adventure where enemies she previously encountered are in the American Southwest.</p>
+                            <p>Three years after the events of <em>Parasite Eve I</em>, Aya is pulled into another adventure where enemies she previously encountered are reportedly sighted in the American Southwest.</p>
                         </BoxImg>
 
                     </Row>

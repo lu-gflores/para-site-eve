@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, SPAN_1_OF_3 } from '../styles'
+import { Row, SPAN_1_OF_3, SPAN_1_OF_2 } from '../styles'
+
 import battle from '../img/Gameplay1/battle.jpg'
 import map from '../img/Gameplay1/map.jpg'
 import menu from '../img/Gameplay1/pe-menu.jpg'
+import tuneup from '../img/Gameplay1/tune-up.png'
 
 import shot1 from '../img/Gameplay1/pe_shot1.jpg'
 import shot2 from '../img/Gameplay1/pe_shot2.jpg'
@@ -17,20 +19,27 @@ const PE1Gameplay = () => {
             <StyledGameSection>
                 <Row>
                     <h2>Parasite Eve Gameplay</h2>
+                    <p><em>"Hmph... You're the only one who seems to be fine...<br /> You should be awakening soon...<br /> Listen... <br /> Your cells are trying to communicate... <br /> They're... calling out..."</em></p>
                 </Row>
                 <Row>
-                    <SPAN_1_OF_3 className='box'>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={map} alt='Map of Manhattan, New York' />
                         <p>Explore Manhattan over the course of six-days in the attempt stop Eve from destroying humanity.</p>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3 className='box'>
+                    </SPAN_1_OF_2>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={battle} alt='Encounter' />
                         <p>As you explore, encounter enemies that underwent mutation by Eve. In a turn-based combat and using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3 className='box'>
+                    </SPAN_1_OF_2>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_2 className='box'>
                         <img src={menu} alt='Game menu' />
-                        <p>Gain experience to level up to unlock her Parasite Energy thanks to Aya's mitochondria. Alter weapon and armor attributes and carefully manage your resources. Spaces are limited!</p>
-                    </SPAN_1_OF_3>
+                        <p>Level up through battles to unlock her Parasite Energy thanks to Aya's mitochondria as well boose her various attributes. Spend Bonus Points to increase your ATB, item capacity, or weapons/armor attributes.</p>
+                    </SPAN_1_OF_2>
+                    <SPAN_1_OF_2 className='box'>
+                        <img src={tuneup} alt='Upgrading rifle in menu' />
+                        <p>As traditional survival horror goes, manage your inventory space as necessary. Whether it's upgrading, selling, or tossing wepaons and armor, make it count! Space and resources are limited!</p>
+                    </SPAN_1_OF_2>
                 </Row>
             </StyledGameSection>
             <section>
@@ -63,8 +72,13 @@ const PE1Gameplay = () => {
 
 const StyledGameSection = styled.section`
     line-height: 1.3;
+    p {
+        text-align: center;
+        padding: 1.5rem 0 1.5rem 0;
+    }
     .box {
         padding: 1%;
+        text-align: center;
     }
     .box img {
         width: 100%;
