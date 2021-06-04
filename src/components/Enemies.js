@@ -1,6 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row } from '../styles'
+import { Row, SPAN_1_OF_4 } from '../styles'
+
+import rat from '../img/enemies/pe1enemies/Rat.png'
+import snake from '../img/enemies/pe1enemies/Snake.png'
+import monkey from '../img/enemies/pe1enemies/Monkey.png'
+import pterodactyl from '../img/enemies/pe1enemies/Pterodactyl.png'
+import spider from '../img/enemies/pe1enemies/Spider.png'
+import alligator from '../img/enemies/pe1enemies/Alligator.png'
+import spiderWoman from '../img/enemies/pe1enemies/Spider-woman.png'
+import armadillo from '../img/enemies/pe1enemies/Armadillo.png'
+
 const Enemies = () => {
     return (
         <div>
@@ -16,7 +26,9 @@ const Enemies = () => {
                     <h2>Parasite Eve NMCs</h2>
                 </Row>
                 <Row>
+                    <SPAN_1_OF_4>
 
+                    </SPAN_1_OF_4>
                 </Row>
             </StyledEnemiesSection>
         </div>
