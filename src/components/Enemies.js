@@ -26,8 +26,39 @@ const Enemies = () => {
                     <h2>Parasite Eve NMCs</h2>
                 </Row>
                 <Row>
-                    <SPAN_1_OF_4>
-
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={rat} alt='rat' />
+                        <h1>Rat</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={snake} alt='snake' />
+                        <h1>Snake</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={monkey} alt='Monkey' />
+                        <h1>Monkey</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={armadillo} alt='Armadillo' />
+                        <h1>Armadillo</h1>
+                    </SPAN_1_OF_4>
+                </Row>
+                <Row>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={pterodactyl} alt='pterodactyl' />
+                        <h1>Pterodactyl</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={spider} alt='spider' />
+                        <h1>Spider</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={alligator} alt='Alligator' />
+                        <h1>Alligator</h1>
+                    </SPAN_1_OF_4>
+                    <SPAN_1_OF_4 className='box'>
+                        <img src={spiderWoman} alt='Spider Woman' />
+                        <h1>Spider Woman</h1>
                     </SPAN_1_OF_4>
                 </Row>
             </StyledEnemiesSection>
@@ -37,8 +68,15 @@ const Enemies = () => {
 
 const StyledEnemiesSection = styled.section`
     line-height: 1.5;
-    background-color: red;
     text-align: center;
+    .box{
+        padding: 1%;
+    }
+    .box img{
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 15px 0 ;
+    }
 `
 
 export default Enemies
