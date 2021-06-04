@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import storyBanner from '../img/story-img/storybanner.jpg'
 import PE1Story from '../components/PE1Story'
 import PE2Story from '../components/PE2Story'
-
+import Enemies from '../components/Enemies'
 const Story = () => {
     return (
         <div>
@@ -12,6 +12,7 @@ const Story = () => {
             </StyledHeader>
             <PE1Story />
             <PE2Story />
+            <Enemies />
         </div>
     )
 }

@@ -14,7 +14,7 @@ import shot8 from '../img/Gameplay2/shot8.jpg'
 
 const PE2Gameplay = () => {
     return (
-        <div>
+        <>
             <StyledGameplaySection>
                 <Row>
                     <h2>Parasite Eve II Gameplay</h2>
@@ -65,7 +65,7 @@ const PE2Gameplay = () => {
                     </li>
                 </StyledShowCase2>
             </section>
-        </div>
+        </>
     )
 }
 const StyledGameplaySection = styled.section`
