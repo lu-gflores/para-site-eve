@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollTop from '../components/ScrollTop'
 import Characters from '../components/Characters'
-
 const Cast = () => {
     return (
         <div>
@@ -11,7 +11,7 @@ const Cast = () => {
                 </StyledHeroText>
             </StyledHeader>
             <Characters />
-
+            <ScrollTop />
         </div>
     )
 }

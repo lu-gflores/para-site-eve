@@ -13,7 +13,7 @@ html {
 }
 body {
     background: #1b1b1b;
-    overflow-x: hidden;
+    ${'' /* overflow-x: hidden; */}
     ${'' /* font-family: 'Noto Sans', sans-serif; */}
     font-family: 'Century Gothic', sans-serif;
     color: #fff;

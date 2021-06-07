@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import heroBanner from '../img/hero-header.jpg'
+
+import ScrollTop from '../components/ScrollTop'
 import IntroSection from '../components/IntroSection'
 import Critics from '../components/Critics'
 import Staff from '../components/Staff'
+
 const About = () => {
     return (
         <div>
@@ -12,6 +16,7 @@ const About = () => {
             <IntroSection />
             <Critics />
             <Staff />
+            <ScrollTop />
         </div>
     )
 }

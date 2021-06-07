@@ -38,7 +38,7 @@ const Nav = () => {
 }
 
 const StyledNavBar = styled.nav`
-    min-height: 11vh;
+    min-height: 8vh;
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -46,7 +46,8 @@ const StyledNavBar = styled.nav`
     padding: 1rem 10rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    background:#282828;
+    z-index: 10;
     a {
         color: #fff;
         text-decoration: none;

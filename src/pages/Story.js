@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollTop from '../components/ScrollTop'
+
 import storyBanner from '../img/story-img/storybanner.jpg'
+
 import PE1Story from '../components/PE1Story'
 import PE2Story from '../components/PE2Story'
 import Enemies from '../components/Enemies'
@@ -13,6 +16,7 @@ const Story = () => {
             <PE1Story />
             <PE2Story />
             <Enemies />
+            <ScrollTop />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollTop from '../components/ScrollTop'
 import PE1Gameplay from '../components/PE1Gameplay'
 import PE2Gameplay from '../components/PE2Gameplay'
 import gameplayBanner from '../img/parasite-eve-in-the-water.jpg'
@@ -14,6 +15,7 @@ const Gameplay = () => {
             </StyledHeader>
             <PE1Gameplay />
             <PE2Gameplay />
+            <ScrollTop />
         </div>
     )
 }
