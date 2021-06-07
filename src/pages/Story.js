@@ -17,10 +17,29 @@ const Story = () => {
     )
 }
 const StyledHeader = styled.header`
-    height: 83vh;
-    background: linear-gradient(171deg, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0.3) 54%), url(${storyBanner});
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+    ::before {
+        content: '';
+        background: linear-gradient(171deg, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0.3) 54%), url(${storyBanner});
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    h1 {
+        position: relative;
+        text-align: center;
+        font-size: 10rem;
+        opacity: 0.75;
+    }
 `
 export default Story

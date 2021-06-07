@@ -7,7 +7,7 @@ const Staff = () => {
         <>
             <StyledStaffSection1>
                 <Row>
-                    <h2>Staff of Parasite Eve I</h2>
+                    <h2>Parasite Eve I Staff</h2>
                 </Row>
                 <Row>
                     <SPAN_1_OF_3>
@@ -36,7 +36,7 @@ const Staff = () => {
             </StyledStaffSection1>
             <StyledStaffSection2>
                 <Row>
-                    <h2>Staff of Parasite Eve II</h2>
+                    <h2>Parasite Eve II Staff</h2>
                 </Row>
                 <Row>
                     <SPAN_1_OF_3>
