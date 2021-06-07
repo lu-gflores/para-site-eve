@@ -27,10 +27,4 @@ const StyledHeader = styled.header`
     background-attachment: fixed;
     height: 90vh;
 `
-const StyledHeroText = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-`
-
 export default About

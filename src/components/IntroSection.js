@@ -18,15 +18,15 @@ const IntroSection = () => {
                     </StyledContext>
                 </Row>
                 <Row>
-                    <h2 data-aos='fade-up'>Background</h2>
+                    <h2>Background</h2>
                 </Row>
                 <Row>
                     <SPAN_1_OF_2>
-                        <p data-aos='fade-right'>Released in 1998 on the original Playstation, <em>Parasite Eve</em> was the first M-Rated game released by Squaresoft (now known as Square Enix). It is an American biological horror themed turn-based RPG and serves as a detached sequel to the novel written by Hideaki Sena, although it is not necessary to read nor watch its film adaptation and instead serves as a backstory of the similar incident in Japan.
+                        <p>Released in 1998 on the original Playstation, <em>Parasite Eve</em> was the first M-Rated game released by Squaresoft (now known as Square Enix). It is an American biological horror themed turn-based RPG and serves as a detached sequel to the novel written by Hideaki Sena, although it is not necessary to read nor watch its film adaptation and instead serves as a backstory of the similar incident in Japan.
                         Nearly 1 million copies were sold in Japan in the first half of 1998 and had shipped over 1.94 million copies as of Februrary 2004.</p>
                     </SPAN_1_OF_2>
                     <SPAN_1_OF_2>
-                        <StyledPortrait data-aos='fade-left' src={Cover} />
+                        <StyledPortrait src={Cover} />
                     </SPAN_1_OF_2>
                 </Row>
             </StyledIntro>

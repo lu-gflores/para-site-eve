@@ -60,6 +60,16 @@ const StyledNavBar = styled.nav`
         padding-left: 10rem;
         position: relative;
     }
+     a:link, a:visited {
+       color: white;
+        text-decoration: none;
+        padding: 3px 0;
+        letter-spacing: 2px;
+        font-size: 90%;
+     }
+    li a:hover, li:active {
+         border-bottom: 2px solid rgb(202, 155, 155)
+   }
     .logo-img img {
         background-color: #fff;
         border-radius: 15px;
