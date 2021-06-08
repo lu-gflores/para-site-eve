@@ -29,6 +29,7 @@ const PE1Story = () => {
 const StyledStory = styled.section`
     line-height: 1.5;
     color: #000;
+    background-color: #f4f4f4;
     img {
         margin: 10px 0 5px 0;
         width: 100%;

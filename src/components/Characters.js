@@ -180,7 +180,7 @@ const Characters = () => {
 
 const StyledSection1 = styled.section`
     line-height: 1.5;
-    background-color: red;
+    background-color: #393e46;
     img {
         margin: 10px 0 5px 0;
         width: 100%;
@@ -189,7 +189,8 @@ const StyledSection1 = styled.section`
 `
 const StyledSection2 = styled.section`
     line-height: 1.5;
-    background-color: #000;
+    background-color: #00adb5;
+    color: #393e46;
     img {
         margin: 10px 0 5px 0;
         width: 100%;

@@ -120,6 +120,8 @@ const Enemies = () => {
 const StyledEnemiesSection = styled.section`
     line-height: 1.5;
     text-align: center;
+    background-color: #aad8d3;
+    color: #000;
     h2 {
         margin: 25px 0 25px 0;
     }
