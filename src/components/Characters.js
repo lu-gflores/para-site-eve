@@ -24,9 +24,10 @@ const Characters = () => {
                 <Row>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            The main protagonist and and heroine of the series. A strong-willed NYPD detective dragged into the apocalyptic events in New York. In 1997, Christmas Eve,
+                            Aya attended an opera performance at Carnegie Hall with her blind date, starring Melissa as the lead role. Suddenly, during her performance, Melissa suddently
+                            transformed into Eve and started killing the audience through spontaneous combustion. During and after Eve's encounter, Aya's mitochondria and genes mutated and granted
+                            her unique abilites such as healing, scanning, etc. through Parasite Energy. Her goal is to stop Eve from eradicating humanity and reproducing superior beings that can alter and control their DNA.
                         </p>
                     </SPAN_2_OF_3>
                     <SPAN_1_OF_3>
@@ -36,14 +37,15 @@ const Characters = () => {
             </StyledSection1>
             <StyledSection2>
                 <Row>
-                    <h1>Eve</h1>
+                    <h1>Melissa Pearce / Eve</h1>
                 </Row>
                 <Row>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat. Etiam eu nunc lectus.
-                            Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            An actress and opera singer who was performing at the Carnegie Hall on Christmas Eve, who later transformed into Mitochondria Eve. During her performance,
+                            her mitochondria began to mutate and fully take over, thus awakening as Eve.
+                            Her advanced mitochrondria communicated with the own audience, resulted in the spontaneous combustion and killing hundreds, although Aya was somehow immune. After Aya's encounter, Eve flees and is set loose in New York,
+                            becoming a major threat to not only the city but to humanity.
                         </p>
                     </SPAN_2_OF_3>
                     <SPAN_1_OF_3>
