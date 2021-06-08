@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Row, SPAN_1_OF_3, SPAN_1_OF_2 } from '../styles'
-
+import staff1BG from '../img/staff/staff1.jpg'
+import staff2BG from '../img/staff/staff2.jpg'
 const Staff = () => {
     return (
         <>
@@ -70,12 +71,20 @@ const Staff = () => {
 
 const StyledStaffSection1 = styled.section`
     line-height: 1.8;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${staff1BG});
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     h1 {
         text-align: center;
     }
 `
 const StyledStaffSection2 = styled.section`
     line-height: 1.8;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${staff2BG});
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     h1 {
         text-align: center;
     }

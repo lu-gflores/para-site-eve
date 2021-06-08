@@ -49,7 +49,7 @@ const Critics = () => {
 }
 const StyledCritics = styled.section`
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${background});
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
 `
