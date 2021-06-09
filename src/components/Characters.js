@@ -60,9 +60,8 @@ const Characters = () => {
                 <Row>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A veteran detective of the NYPD and Aya's partner. He acts as the support role for Aya, encouraging her with words of experience despite dealing with his divorce. He is also father, however due to his dedication to his job, he is unable to take care
+                            of his son properly. Due to this, Daniel harbors a strong paternal sense and is very protective of his son as well as Aya.
                         </p>
                     </SPAN_2_OF_3>
                     <SPAN_1_OF_3>
@@ -77,9 +76,8 @@ const Characters = () => {
                 <Row>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A japanese scientist who is very interested in the mitochondria and the first Eve. He is very polite but introverted, thus has a hard time communicating with Aya and Daniel. After hearing about the Carnegie Hall incident, he flies to NYC to investigate and assists Aya and Daniel
+                            in stopping Eve by providing his knowledge and research.
                         </p>
                     </SPAN_2_OF_3>
                     <SPAN_1_OF_3>
