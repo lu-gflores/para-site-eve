@@ -99,9 +99,8 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A former accountant who's daughter was killed by an NMC in the events of the first game. He joins the Mitochondrion Investation and Supression Team, or MIST, a branch of the FBI that formed
+                            after the NYC incident and serves as Aya's partner. Aya sees Rupert as a quiet and reserved man, but merciless around NMCs and is treated as an outcast.
                         </p>
                     </SPAN_2_OF_3>
                 </Row>
@@ -116,9 +115,8 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            An agent of MIST and master of information "retrieval". He is rather laid back and a loner, but considers Aya a close friend. He provides backup for Aya during her time in Dryfield by striking a deal with
+                            one of the locals by selling firearms.
                         </p>
                     </SPAN_2_OF_3>
                 </Row>
@@ -133,9 +131,8 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A bounty hunter who likes to live on the edge. He is very skilled in a variety of weapons and enjoys the thrill of the hunt. He is also very secretive about his background and proves to be a
+                            cooperative ally for Aya, although she finds him annoying at first. It is hinted that he may have some interest in Aya during their time in Dryfield.
                         </p>
                     </SPAN_2_OF_3>
                 </Row>
@@ -150,9 +147,7 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A MIST member and a friend of Aya. She runs a weapons depot at the MIST Headquarters stationed at LA, California. She sells guns and equipment for Aya at her own shop, Bouquet's Guns and Ammo, in exchange for BP (Bounty Points).
                         </p>
                     </SPAN_2_OF_3>
                 </Row>
@@ -167,9 +162,7 @@ const Characters = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            A local dog who demonstrates obedience, intelligence, bravery, and loyalty. He assists Aya in a variety of ways during her time in Dryfield regardless of how dangerous the situation is.
                         </p>
                     </SPAN_2_OF_3>
                 </Row>
