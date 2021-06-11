@@ -23,7 +23,7 @@ const IntroSection = () => {
                 <Row>
                     <SPAN_1_OF_2>
                         <p>Released in 1998 on the original Playstation, <em>Parasite Eve</em> was the first M-Rated game released by Squaresoft (now known as Square Enix). It is an American biological horror themed turn-based RPG and serves as a detached sequel to the novel written by Hideaki Sena, although it is not necessary to read nor watch its film adaptation and instead serves as a backstory of the similar incident in Japan.
-                        Nearly 1 million copies were sold in Japan in the first half of 1998 and had shipped over 1.94 million copies as of Februrary 2004.</p>
+                            Nearly 1 million copies were sold in Japan in the first half of 1998 and had shipped over 1.94 million copies as of Februrary 2004.</p>
                     </SPAN_1_OF_2>
                     <SPAN_1_OF_2>
                         <StyledPortrait src={Cover} />
@@ -68,6 +68,8 @@ const StyledIntroImage = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border: 1px solid #fff;
+    box-shadow: 10px 10px 10px #000;
     border-radius: 25px;
 `
 const StyledIntro = styled.section`
@@ -89,6 +91,7 @@ const StyledPortrait = styled.img`
     width: 100%;
     height: 380px;
     border: 1px solid #fff;
+    box-shadow: 10px 10px 10px #000;
     padding: 5px;
 `
 const BoxImg = styled(SPAN_1_OF_2)`
@@ -98,6 +101,7 @@ const BoxImg = styled(SPAN_1_OF_2)`
         height: 350px;
         border-radius: 20px;
         margin-bottom: 16px;
+        box-shadow: 10px 10px 10px #000;
 }
 `
 export default IntroSection
