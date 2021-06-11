@@ -71,7 +71,7 @@ const Staff = () => {
 
 const StyledStaffSection1 = styled.section`
     line-height: 1.8;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${staff1BG});
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)) ;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -81,7 +81,7 @@ const StyledStaffSection1 = styled.section`
 `
 const StyledStaffSection2 = styled.section`
     line-height: 1.8;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${staff2BG});
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
     background-position: center;
     background-attachment: fixed;
     background-size: cover;

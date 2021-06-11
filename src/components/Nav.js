@@ -67,8 +67,8 @@ const StyledNavBar = styled.nav`
         letter-spacing: 2px;
         font-size: 90%;
      }
-    li a:hover, li:active {
-         border-bottom: 2px solid rgb(202, 155, 155)
+    a:hover, a:active {
+        border-bottom: 2px solid #00adb5;
    }
     .logo-img img {
         background-color: #fff;
