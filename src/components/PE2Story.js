@@ -16,9 +16,12 @@ const PE2Story = () => {
                     </SPAN_1_OF_3>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            Three years after stopping Eve, Aya Brea now an FBI agent works in the Mitochondrion Investigation and Supresstion
+                            Team, or MIST, a branch with the purpose of finding and suppressing the NMCs that begin appearing throughout the United States. Dispatched to
+                            Akropolis Tower shopping mall to support a SWAT team, Aya and her partner Rupert investigate to find new forms of NMCs who are able to pass as human and
+                            begin their on-slaught. As they begin to eliminate the NMCs, Aya realizes the building is rigged to explode and fights a psychopathic NMC. After the raid and
+                            barely escaping with their lives, Aya is then sent by the MIST director to investigate a remote desert town of Dryfield, Nevada, after reports of
+                            unusual animals being seen.
                         </p>
                     </SPAN_2_OF_3>
                 </Row>

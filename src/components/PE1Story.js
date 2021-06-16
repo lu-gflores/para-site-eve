@@ -12,9 +12,11 @@ const PE1Story = () => {
                 <Row>
                     <SPAN_2_OF_3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida. Etiam congue diam non tempus consequat.
-                            Etiam eu nunc lectus. Integer ac efficitur lectus, et euismod quam. Maecenas eleifend tortor vel efficitur consequat. Integer aliquam quis nunc ac molestie.
+                            On Christmas Eve of 1997, NYPD rookie officer Aya Brea attends an Opera at Carnegie Hall with a blind date. During the performance, lead actress Melissa Pearce begins to attack the audience
+                            through sponteneous combustion, with the exception of Aya for an unknown reason. As Aya confonts Melissa on stage, Melissa vaguely states that Aya's mitochondria needs more time to develop and flees.
+                            During this encounter, she learns that she is able to use mysterious powers known as Parasite Energy. As she pursues Melissa backstage, Aya encounters monsterous creatuers known as Neo-Mitochondrial Creatures (NMCs)
+                            and learns of Melissa's changes. As soon as Aya catches up to Melissa, Melissa begins to mutate into a flying beast and declares herself as Eve. After the second battle, Eve once again flees into the sewers and
+                            is set loose in New York City, transforming nearly every living thing into NMCs and Aya must eliminate them and stop Eve from destroying humanity.
                         </p>
                     </SPAN_2_OF_3>
                     <SPAN_1_OF_3>
