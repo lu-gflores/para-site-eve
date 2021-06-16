@@ -37,7 +37,7 @@ position: relative;
     h1 {
         position: relative;
         text-align: center;
-        font-size: 10rem;
+        font-size: 56px;
         opacity: 0.85;
     }
 `

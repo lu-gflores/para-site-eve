@@ -5,12 +5,7 @@ import { Row, Col } from '../styles'
 import logo from '../img/logo.png'
 
 const Nav = () => {
-    const { pathname } = useLocation()
-    // const [expand, setExpand] = useState(false)
-
-    // const handleToggle = e => {
-
-    // }
+    const [expand, setExpand] = useState(false)
 
     return (
         <StyledNavBar>
@@ -44,7 +39,7 @@ const StyledNavBar = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     background:#282828;
     z-index: 10;

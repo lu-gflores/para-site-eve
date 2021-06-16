@@ -9,7 +9,7 @@ const Gameplay = () => {
     return (
         <div>
             <StyledHeader>
-                <h1>Gameplay</h1>
+                <h1>Mechanics</h1>
             </StyledHeader>
             <PE1Gameplay />
             <PE2Gameplay />
@@ -28,9 +28,9 @@ const StyledHeader = styled.header`
     ::before {
         content: '';
         background: linear-gradient(171deg, rgba(187,190,187,0.3) 17%, 
-    rgba(104,170,157,0.5) 54%, 
-    rgba(213,219,215,0.7) 86%), 
-    url(${gameplayBanner});
+            rgba(104,170,157,0.5) 54%, 
+            rgba(213,219,215,0.7) 86%), 
+            url(${gameplayBanner});
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -43,7 +43,7 @@ const StyledHeader = styled.header`
     h1 {
         position: relative;
         text-align: center;
-        font-size: 8rem;
+        font-size: 56px;
         opacity: 0.85;
     }
 

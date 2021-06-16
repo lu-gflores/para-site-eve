@@ -18,8 +18,8 @@ const About = () => {
                     </SPAN_2_OF_2>
                 </Row>
             </StyledHeader>
-            <Critics />
             <IntroSection />
+            <Critics />
             <Staff />
             <ScrollTop />
         </div>
