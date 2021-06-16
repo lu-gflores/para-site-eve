@@ -41,7 +41,7 @@ const PE2Gameplay = () => {
                     </SPAN_1_OF_2>
                 </Row>
             </StyledGameplaySection>
-            <section>
+            <StyledImageSection>
                 <StyledShowCase2>
                     <li>
                         <figure>
@@ -64,7 +64,7 @@ const PE2Gameplay = () => {
                         </figure>
                     </li>
                 </StyledShowCase2>
-            </section>
+            </StyledImageSection>
         </>
     )
 }
@@ -84,9 +84,13 @@ const StyledGameplaySection = styled.section`
         margin-bottom: 16px;
     }
 `
+const StyledImageSection = styled.section`
+    padding: 0;
+`
 const StyledShowCase2 = styled.ul`
     list-style: none;
     width: 100%;
+    display: flow-root;
     li {
         display: block;
         float: left;

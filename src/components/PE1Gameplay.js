@@ -95,6 +95,7 @@ const StyledShowCase1 = styled.ul`
     list-style: none;
     width: 100%;
     background-color: #000;
+    display: flow-root;
     li {
         display: block;
         float: left;
@@ -111,9 +112,6 @@ const StyledShowCase1 = styled.ul`
         height: 300px;
         object-fit: cover;
         opacity: 0.7;
-    }
-    .clearfix {
-        display: flow-root;
     }
     @media only screen and (max-width: 1023px) {
         figure img {

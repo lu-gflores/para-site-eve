@@ -37,6 +37,9 @@ const StyledStory = styled.section`
         width: 100%;
         height: 420px;
     }
+    p {
+        padding: 2%;
+    }
 `
 
 export default PE1Story
