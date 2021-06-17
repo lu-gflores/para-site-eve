@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-
+import { InView } from 'react-intersection-observer'
 import { Row, SPAN_1_OF_2, SPAN_2_OF_2 } from '../styles'
+import { useScroll } from './useScroll'
 import Cover from '../img/PE1.png'
 import introImg from '../img/intro.jpg'
 import eve1 from '../img/eve1.jpg'
@@ -16,17 +17,29 @@ const IntroSection = () => {
         <>
             <StyledIntro>
                 <Row>
-                    <StyledContext>
-                        <motion.h2 variants={introSentence} initial='hidden' animate='visible'>
-                            {line1.split('').map((char, idx) => {
-                                return (
-                                    <motion.span key={char + "-" + idx} variants={letter}>{char}</motion.span>
-                                )
-                            })}
-                        </motion.h2>
-                        <p>Experience the duology of Aya Brea who possesses abnormal abilities due to changes in her mitochondria.</p>
-                        <StyledIntroImage></StyledIntroImage>
-                    </StyledContext>
+                    <InView threshold={0.3} triggerOnce={null}>
+                        {({ ref, inView }) => (
+                            <StyledContext>
+                                <motion.h2 ref={ref} variants={introSentence} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                    {line1.split('').map((char, idx) => {
+                                        return (
+                                            <motion.span key={char + "-" + idx} variants={letter}>{char}</motion.span>
+                                        )
+                                    })}
+                                </motion.h2>
+                                <motion.p ref={ref} variants={introSentence} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                    {line2.split('').map((char, idx) => {
+                                        return (
+                                            <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                        )
+                                    })}
+                                </motion.p>
+
+                                <motion.StyledIntroImage></motion.StyledIntroImage>
+
+                            </StyledContext>
+                        )}
+                    </InView>
                 </Row>
                 <Row>
                     <h2>Background</h2>
@@ -69,8 +82,8 @@ const introSentence = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 0.5,
-            staggerChildren: 0.08,
+            delay: 0.3,
+            staggerChildren: 0.03,
         },
     },
 }
