@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { Row, SPAN_2_OF_2 } from '../styles'
 import heroBanner from '../img/hero-header.jpg'
 
@@ -14,7 +15,7 @@ const About = () => {
             <StyledHeader>
                 <Row>
                     <SPAN_2_OF_2>
-                        <img src={heroBanner} alt='hero banner of parasite eve' />
+                        <motion.img initial='hidden' transition={{ duration: 0.6 }} animate='visible' variants={variants} src={heroBanner} alt='hero banner of parasite eve' />
                     </SPAN_2_OF_2>
                 </Row>
             </StyledHeader>
@@ -24,6 +25,10 @@ const About = () => {
             <ScrollTop />
         </div>
     )
+}
+const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
 }
 const StyledHeader = styled.section`
    background-color: #f4f4f4;

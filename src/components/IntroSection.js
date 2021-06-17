@@ -1,10 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+
 import { Row, SPAN_1_OF_2, SPAN_2_OF_2 } from '../styles'
 import Cover from '../img/PE1.png'
 import introImg from '../img/intro.jpg'
 import eve1 from '../img/eve1.jpg'
 import eve2 from '../img/eve2.jpg'
+
+const line1 = 'Experience the classic horror RPG'
+const line2 = 'Experience the duology of Aya Brea who possesses abnormal abilities due to changes in her mitochondria.'
 
 const IntroSection = () => {
     return (
@@ -12,7 +17,13 @@ const IntroSection = () => {
             <StyledIntro>
                 <Row>
                     <StyledContext>
-                        <h2>Experience the classic horror RPG</h2>
+                        <motion.h2 variants={introSentence} initial='hidden' animate='visible'>
+                            {line1.split('').map((char, idx) => {
+                                return (
+                                    <motion.span key={char + "-" + idx} variants={letter}>{char}</motion.span>
+                                )
+                            })}
+                        </motion.h2>
                         <p>Experience the duology of Aya Brea who possesses abnormal abilities due to changes in her mitochondria.</p>
                         <StyledIntroImage></StyledIntroImage>
                     </StyledContext>
@@ -52,6 +63,24 @@ const IntroSection = () => {
             </StyledDuo>
         </>
     )
+}
+const introSentence = {
+    hidden: { opacity: 1 },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.5,
+            staggerChildren: 0.08,
+        },
+    },
+}
+
+const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0
+    }
 }
 
 const StyledContext = styled.div`
