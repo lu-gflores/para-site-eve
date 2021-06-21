@@ -1,52 +1,85 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { InView } from 'react-intersection-observer'
 import { Row, SPAN_1_OF_3 } from '../styles'
 import background from '../img/critics-background.jpg'
+
+const title = 'Critics'
 
 const Critics = () => {
     return (
         <StyledCritics>
-            <Row>
-                <h2>Critics</h2>
-            </Row>
+            <InView threshold={0.25} triggerOnce>
+                {({ ref, inView }) => (
+                    <Row>
+                        <motion.h2 ref={ref} variants={headLine} animate={`${inView ? 'visible' : 'hidden'}`}>
+                            {title.split('').map((char, idx) => {
+                                return (
+                                    <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                )
+                            })}
+                        </motion.h2>
+                    </Row>
+                )}
+            </InView>
+
+
             <Row>
                 <SPAN_1_OF_3>
                     <StyledText>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                            Etiam congue diam non tempus consequat.
+                            "Parasite eve should be lauded for its presentation, which, in a testament to Square's work, is second to none. Everything from its
+                            character design to its pre-rendered backgrounds to its CG cinematics are utterly breathtaking."
                         </p>
                     </StyledText>
                     <br />
-                    <p>- Critic</p>
+                    <p>- Randy Nelson, IGN</p>
                 </SPAN_1_OF_3>
                 <SPAN_1_OF_3>
                     <StyledText>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                            Etiam congue diam non tempus consequat.
+                            "The music is amazing. Legendary composer Yoko Shimomura managed to blend opera with fast-paced techno and made it somehow scary and really cool. It gets your heart
+                            racing when there's action happening on screen or when a somber emotional moment happening. "
                         </p>
                     </StyledText>
                     <br />
-                    <p>- Critic</p>
+                    <p>-Suzi, The Sphere Hunter</p>
                 </SPAN_1_OF_3>
                 <SPAN_1_OF_3>
                     <StyledText>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum eleifend mauris, eu cursus orci auctor ultricies.
-                            Cras viverra quam ut lorem pulvinar, ut dignissim augue gravida.
-                            Etiam congue diam non tempus consequat.
+                            "The series is amazing, it makes me sad that Square has forgotton about the franchise. I would pay lots of money for a ground-up remake or an actual third game
+                            in the series."
                         </p>
                     </StyledText>
                     <br />
-                    <p>- Critic</p>
+                    <p>- Jerry Dobracki, BagoGames</p>
                 </SPAN_1_OF_3>
             </Row>
         </StyledCritics>
     )
 }
+
+const headLine = {
+    hidden: { opacity: 1 },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.3,
+            staggerChildren: 0.03,
+        },
+    },
+}
+
+const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0
+    }
+}
+
 const StyledCritics = styled.section`
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${background});
     background-position: center;
