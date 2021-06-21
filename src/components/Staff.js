@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { InView } from 'react-intersection-observer'
 import { Row, SPAN_1_OF_3, SPAN_1_OF_2 } from '../styles'
 import staffbgImage from '../img/Parasite_eve_m_001.jpg'
 
@@ -10,20 +12,25 @@ const Staff = () => {
                 <Row>
                     <h2>Parasite Eve I Staff</h2>
                 </Row>
-                <Row>
-                    <SPAN_1_OF_3>
-                        <h1>Director</h1>
-                        <h3>Takashi Tokita</h3>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3>
-                        <h1>Producer</h1>
-                        <h3>Hironbu Sakaguchi</h3>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3>
-                        <h1>Programmer</h1>
-                        <h3>Hiroshi Kawai</h3>
-                    </SPAN_1_OF_3>
-                </Row>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <SPAN_1_OF_3>
+                                <h1>Director</h1>
+                                <h3>Takashi Tokita</h3>
+                            </SPAN_1_OF_3>
+                            <SPAN_1_OF_3>
+                                <h1>Producer</h1>
+                                <h3>Hironbu Sakaguchi</h3>
+                            </SPAN_1_OF_3>
+                            <SPAN_1_OF_3>
+                                <h1>Programmer</h1>
+                                <h3>Hiroshi Kawai</h3>
+                            </SPAN_1_OF_3>
+                        </Row>
+                    )}
+                </InView>
+
                 <Row>
                     <SPAN_1_OF_2>
                         <h1>Artist</h1>
@@ -80,14 +87,14 @@ const StyledStaffSection1 = styled.section`
         text-align: center;
     }
 `
-const StyledStaffSection2 = styled.section`
-    line-height: 1.8;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    h1 {
-        text-align: center;
-    }
-`
+// const StyledStaffSection2 = styled.section`
+//     line-height: 1.8;
+//     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+//     background-position: center center;
+//     background-attachment: fixed;
+//     background-size: cover;
+//     h1 {
+//         text-align: center;
+//     }
+// `
 export default Staff

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Row = styled.div`
+export const Row = styled(motion.div)`
     max-width: 1140px;
     margin: 0 auto;
     zoom: 1;
