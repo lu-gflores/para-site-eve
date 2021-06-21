@@ -24,39 +24,43 @@ const Critics = () => {
                 )}
             </InView>
 
+            <InView threshold={0.25} triggerOnce>
+                {({ ref, inView }) => (
+                    <Row>
+                        <SPAN_1_OF_3>
+                            <StyledText>
+                                <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                                    "Parasite Eve should be lauded for its presentation, which, in a testament to Square's work, is second to none. Everything from its
+                                    character design to its pre-rendered backgrounds to its CG cinematics are utterly breathtaking."
+                                </motion.p>
+                            </StyledText>
+                            <br />
+                            <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>- Randy Nelson, IGN</motion.p>
+                        </SPAN_1_OF_3>
+                        <SPAN_1_OF_3>
+                            <StyledText>
+                                <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                                    "The music is amazing. Legendary composer Yoko Shimomura managed to blend opera with fast-paced techno and made it somehow scary and really cool. It gets your heart
+                                    racing when there's action happening on screen or when a somber emotional moment happening. "
+                                </motion.p>
+                            </StyledText>
+                            <br />
+                            <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>-Suzi, The Sphere Hunter</motion.p>
+                        </SPAN_1_OF_3>
+                        <SPAN_1_OF_3>
+                            <StyledText>
+                                <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                                    "The series is amazing, it makes me sad that Square has forgotton about the franchise. I would pay lots of money for a ground-up remake or an actual third game
+                                    in the series."
+                                </motion.p>
+                            </StyledText>
+                            <br />
+                            <motion.p ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>- Jerry Dobracki, BagoGames</motion.p>
+                        </SPAN_1_OF_3>
+                    </Row>
+                )}
+            </InView>
 
-            <Row>
-                <SPAN_1_OF_3>
-                    <StyledText>
-                        <p>
-                            "Parasite eve should be lauded for its presentation, which, in a testament to Square's work, is second to none. Everything from its
-                            character design to its pre-rendered backgrounds to its CG cinematics are utterly breathtaking."
-                        </p>
-                    </StyledText>
-                    <br />
-                    <p>- Randy Nelson, IGN</p>
-                </SPAN_1_OF_3>
-                <SPAN_1_OF_3>
-                    <StyledText>
-                        <p>
-                            "The music is amazing. Legendary composer Yoko Shimomura managed to blend opera with fast-paced techno and made it somehow scary and really cool. It gets your heart
-                            racing when there's action happening on screen or when a somber emotional moment happening. "
-                        </p>
-                    </StyledText>
-                    <br />
-                    <p>-Suzi, The Sphere Hunter</p>
-                </SPAN_1_OF_3>
-                <SPAN_1_OF_3>
-                    <StyledText>
-                        <p>
-                            "The series is amazing, it makes me sad that Square has forgotton about the franchise. I would pay lots of money for a ground-up remake or an actual third game
-                            in the series."
-                        </p>
-                    </StyledText>
-                    <br />
-                    <p>- Jerry Dobracki, BagoGames</p>
-                </SPAN_1_OF_3>
-            </Row>
         </StyledCritics>
     )
 }
