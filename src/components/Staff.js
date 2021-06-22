@@ -30,21 +30,43 @@ const Staff = () => {
                         </Row>
                     )}
                 </InView>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <SPAN_1_OF_2>
+                                <h1>Artist</h1>
+                                <h3>Tetsuya Nomura</h3>
+                            </SPAN_1_OF_2>
+                            <SPAN_1_OF_2>
+                                <h1>Composer</h1>
+                                <h3>Yoko Shimomura</h3>
+                            </SPAN_1_OF_2>
+                        </Row>
+                    )}
+                </InView>
 
-                <Row>
-                    <SPAN_1_OF_2>
-                        <h1>Artist</h1>
-                        <h3>Tetsuya Nomura</h3>
-                    </SPAN_1_OF_2>
-                    <SPAN_1_OF_2>
-                        <h1>Composer</h1>
-                        <h3>Yoko Shimomura</h3>
-                    </SPAN_1_OF_2>
-                </Row>
 
                 <Row>
                     <h2>Parasite Eve II Staff</h2>
                 </Row>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <SPAN_1_OF_3>
+                                <h1>Director</h1>
+                                <h3>Kenichi Iwao</h3>
+                            </SPAN_1_OF_3>
+                            <SPAN_1_OF_3>
+                                <h1>Producer</h1>
+                                <h3>Yusuke Hirata</h3>
+                            </SPAN_1_OF_3>
+                            <SPAN_1_OF_3>
+                                <h1>Writer</h1>
+                                <h3>Kenichi Iwao</h3>
+                            </SPAN_1_OF_3>
+                        </Row>
+                    )}
+                </InView>
                 <Row>
                     <SPAN_1_OF_3>
                         <h1>Director</h1>
