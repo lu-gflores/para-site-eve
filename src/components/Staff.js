@@ -8,10 +8,15 @@ import staffbgImage from '../img/Parasite_eve_m_001.jpg'
 const Staff = () => {
     return (
         <>
-            <StyledStaffSection1>
-                <Row>
-                    <h2>Parasite Eve I Staff</h2>
-                </Row>
+            <StyledStaffSection>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <h2>Parasite Eve I Staff</h2>
+                        </Row>
+                    )}
+                </InView>
+
                 <InView threshold={0.25} triggerOnce>
                     {({ ref, inView }) => (
                         <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
@@ -44,11 +49,13 @@ const Staff = () => {
                         </Row>
                     )}
                 </InView>
-
-
-                <Row>
-                    <h2>Parasite Eve II Staff</h2>
-                </Row>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <h2>Parasite Eve II Staff</h2>
+                        </Row>
+                    )}
+                </InView>
                 <InView threshold={0.25} triggerOnce>
                     {({ ref, inView }) => (
                         <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
@@ -67,37 +74,27 @@ const Staff = () => {
                         </Row>
                     )}
                 </InView>
-                <Row>
-                    <SPAN_1_OF_3>
-                        <h1>Director</h1>
-                        <h3>Kenichi Iwao</h3>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3>
-                        <h1>Producer</h1>
-                        <h3>Yusuke Hirata</h3>
-                    </SPAN_1_OF_3>
-                    <SPAN_1_OF_3>
-                        <h1>Writer</h1>
-                        <h3>Kenichi Iwao</h3>
-                    </SPAN_1_OF_3>
-                </Row>
-                <Row>
-                    <SPAN_1_OF_2>
-                        <h1>Artists</h1>
-                        <h3>Tetsuya Nomura</h3>
-                        <h3>Fumi Nakashima</h3>
-                    </SPAN_1_OF_2>
-                    <SPAN_1_OF_2>
-                        <h1>Composer</h1>
-                        <h3>Naoshi Mizuta</h3>
-                    </SPAN_1_OF_2>
-                </Row>
-            </StyledStaffSection1>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <SPAN_1_OF_2>
+                                <h1>Artists</h1>
+                                <h3>Tetsuya Nomura</h3>
+                                <h3>Fumi Nakashima</h3>
+                            </SPAN_1_OF_2>
+                            <SPAN_1_OF_2>
+                                <h1>Composer</h1>
+                                <h3>Naoshi Mizuta</h3>
+                            </SPAN_1_OF_2>
+                        </Row>
+                    )}
+                </InView>
+            </StyledStaffSection>
         </>
     )
 }
 
-const StyledStaffSection1 = styled.section`
+const StyledStaffSection = styled.section`
     line-height: 1.8;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${staffbgImage}) ;
     background-color: #fff;
