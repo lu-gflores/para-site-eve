@@ -70,7 +70,8 @@ const PE2Gameplay = () => {
 }
 const StyledGameplaySection = styled.section`
     line-height: 1.5;
-    background: linear-gradient(328deg, rgba(93,84,79,1) 4%, rgba(183,180,175,1) 63%, rgba(225,226,205,1) 95%);
+    /* background: linear-gradient(328deg, rgba(93,84,79,1) 4%, rgba(183,180,175,1) 63%, rgba(225,226,205,1) 95%); */
+    background: #393e46;
     p{
         text-align: center;
         padding: 1.5rem 0 1.5rem 0;

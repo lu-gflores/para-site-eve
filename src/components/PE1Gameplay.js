@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, SPAN_1_OF_3, SPAN_1_OF_2 } from '../styles'
+import { InView } from 'react-intersection-observer'
+import { motion } from 'framer-motion'
+
+import { Row, SPAN_1_OF_2 } from '../styles'
 
 import battle from '../img/Gameplay1/battle.jpg'
 import map from '../img/Gameplay1/map.jpg'
@@ -13,14 +16,29 @@ import shot3 from '../img/Gameplay1/pe_shot3.jpg'
 import shot4 from '../img/Gameplay1/pe_shot4.jpg'
 
 
+const quote1 = `"Hmph... You're the only one who seems to be fine...\nYou should be awakening soon...\nListen..\nYour cells are trying to communicate...\nThey're... calling out..."`
 const PE1Gameplay = () => {
     return (
         <>
             <StyledGameSection>
-                <Row>
-                    <h2>Parasite Eve Gameplay</h2>
-                    <p><em>"Hmph... You're the only one who seems to be fine...<br /> You should be awakening soon...<br /> Listen... <br /> Your cells are trying to communicate... <br /> They're... calling out..."</em></p>
-                </Row>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <h2>Parasite Eve Gameplay</h2>
+                            <motion.p style={{ display: 'block' }} ref={ref} variants={quote} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                {quote1.split('\n').map((char, idx) => {
+                                    console.log(char, idx)
+                                    return (
+                                        <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                    )
+                                })}
+                                {/* <em>"Hmph... You're the only one who seems to be fine...<br /> You should be awakening soon...<br /> Listen... <br /> Your cells are trying to communicate... <br /> They're... calling out..."</em> */}
+                            </motion.p>
+                        </Row>
+                    )}
+                </InView>
+
+
                 <Row>
                     <SPAN_1_OF_2 className='box'>
                         <img src={map} alt='Map of Manhattan, New York' />
@@ -46,22 +64,22 @@ const PE1Gameplay = () => {
                 <StyledShowCase1 className='clearfix'>
                     <li>
                         <figure>
-                            <img src={shot1} alt='Screen shot 1' />
+                            <motion.img transition={{ duration: 0.6 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }} src={shot1} alt='Screen shot 1' />
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src={shot2} alt='Screen shot 1' />
+                            <motion.img transition={{ duration: 0.6 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }} src={shot2} alt='Screen shot 1' />
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src={shot3} alt='Screen shot 1' />
+                            <motion.img transition={{ duration: 0.6 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }} src={shot3} alt='Screen shot 1' />
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src={shot4} alt='Screen shot 1' />
+                            <motion.img transition={{ duration: 0.6 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }} src={shot4} alt='Screen shot 1' />
                         </figure>
                     </li>
                 </StyledShowCase1>
@@ -70,10 +88,29 @@ const PE1Gameplay = () => {
     )
 }
 
+const quote = {
+    hidden: { opacity: 1 },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.3,
+            staggerChildren: 0.03
+        }
+    }
+}
+
+const letter = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+        opacity: 1,
+        y: 0
+    }
+}
 const StyledGameSection = styled.section`
     line-height: 1.3;
     color: #000;
-    background: linear-gradient(328deg, rgba(254,252,251,1) 10%, rgba(224,172,185,1) 31%, rgba(167,93,127,1) 48%, rgba(254,252,251,1) 87%);
+    /* background: linear-gradient(328deg, rgba(254,252,251,1) 10%, rgba(224,172,185,1) 31%, rgba(167,93,127,1) 48%, rgba(254,252,251,1) 87%); */
+    background-color: #00adb5;
     p {
         text-align: center;
         padding: 1.5rem 0 1.5rem 0;
