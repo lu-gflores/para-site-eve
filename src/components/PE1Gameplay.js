@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 import { InView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 
@@ -15,8 +16,6 @@ import shot2 from '../img/Gameplay1/pe_shot2.jpg'
 import shot3 from '../img/Gameplay1/pe_shot3.jpg'
 import shot4 from '../img/Gameplay1/pe_shot4.jpg'
 
-
-const quote1 = `"Hmph... You're the only one who seems to be fine...\nYou should be awakening soon...\nListen..\nYour cells are trying to communicate...\nThey're... calling out..."`
 const PE1Gameplay = () => {
     return (
         <>
@@ -25,40 +24,78 @@ const PE1Gameplay = () => {
                     {({ ref, inView }) => (
                         <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
                             <h2>Parasite Eve Gameplay</h2>
-                            <motion.p style={{ display: 'block' }} ref={ref} variants={quote} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
-                                {quote1.split('\n').map((char, idx) => {
-                                    console.log(char, idx)
-                                    return (
-                                        <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
-                                    )
-                                })}
-                                {/* <em>"Hmph... You're the only one who seems to be fine...<br /> You should be awakening soon...<br /> Listen... <br /> Your cells are trying to communicate... <br /> They're... calling out..."</em> */}
-                            </motion.p>
+                            <p >
+                                <em>
+                                    "Hmph... You're the only one who seems to be fine...
+                                    <br />
+                                    You should be awakening soon...
+                                    <br />
+                                    Listen...
+                                    <br />
+                                    Your cells are trying to communicate...
+                                    <br /> They're... calling out..."</em>
+                            </p>
+                        </Row>
+                    )}
+                </InView>
+
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }}>
+                            <SPAN_1_OF_2 className='box'>
+                                <img src={map} alt='Map of Manhattan, New York' />
+                                <motion.p ref={ref} variants={description} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                    {'Explore Manhattan over the course of six-days in the attempt stop Eve from destroying humanity.'.split('').map((char, idx) => {
+                                        return (
+                                            <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                        )
+                                    })}
+                                </motion.p>
+                            </SPAN_1_OF_2>
+                            <SPAN_1_OF_2 className='box'>
+                                <img src={battle} alt='Encounter' />
+                                <motion.p ref={ref} variants={description} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                    {'As you explore, encounter enemies that underwent mutation by Eve. In a turn-based combat and using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.'
+                                        .split('').map((char, idx) => {
+                                            return (
+                                                <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                            )
+                                        })}
+                                </motion.p>
+                            </SPAN_1_OF_2>
+                        </Row>
+                    )}
+                </InView>
+                <InView threshold={0.25} triggerOnce>
+                    {({ ref, inView }) => (
+                        <Row ref={ref} animate={inView ? { opacity: 1 } : { opacity: 0 }} initial={{ opacity: 0 }} transition={{ ease: "easeIn", duration: 2 }} >
+                            <SPAN_1_OF_2 className='box'>
+                                <img src={menu} alt='Game menu' />
+                                <motion.p ref={ref} variants={description} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`}>
+                                    {`Level up through battles to unlock her Parasite Energy thanks to Aya's mitochondria as well boose her various attributes. 
+                                Spend Bonus Points to increase your ATB, item capacity, or weapons/armor attributes.`.split('').map((char, idx) => {
+                                        return (
+                                            <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                        )
+                                    })}
+                                </motion.p>
+                            </SPAN_1_OF_2>
+                            <SPAN_1_OF_2 className='box'>
+                                <img src={tuneup} alt='Upgrading rifle in menu' />
+                                <motion.p ref={ref} variants={description} initial='hidden' animate={`${inView ? 'visible' : 'hidden'}`} >
+                                    {`As traditional survival horror goes, manage your inventory space as necessary. Whether it's upgrading, selling, or tossing wepaons and armor, make it count! Space and resources are limited!`
+                                        .split('').map((char, idx) => {
+                                            return (
+                                                <motion.span key={char + '-' + idx} variants={letter}>{char}</motion.span>
+                                            )
+                                        })}
+                                </motion.p>
+                            </SPAN_1_OF_2>
                         </Row>
                     )}
                 </InView>
 
 
-                <Row>
-                    <SPAN_1_OF_2 className='box'>
-                        <img src={map} alt='Map of Manhattan, New York' />
-                        <p>Explore Manhattan over the course of six-days in the attempt stop Eve from destroying humanity.</p>
-                    </SPAN_1_OF_2>
-                    <SPAN_1_OF_2 className='box'>
-                        <img src={battle} alt='Encounter' />
-                        <p>As you explore, encounter enemies that underwent mutation by Eve. In a turn-based combat and using the Active Time Bar, choose how to spend your action, whether to attack, use abilities, change weapons, or flee.</p>
-                    </SPAN_1_OF_2>
-                </Row>
-                <Row>
-                    <SPAN_1_OF_2 className='box'>
-                        <img src={menu} alt='Game menu' />
-                        <p>Level up through battles to unlock her Parasite Energy thanks to Aya's mitochondria as well boose her various attributes. Spend Bonus Points to increase your ATB, item capacity, or weapons/armor attributes.</p>
-                    </SPAN_1_OF_2>
-                    <SPAN_1_OF_2 className='box'>
-                        <img src={tuneup} alt='Upgrading rifle in menu' />
-                        <p>As traditional survival horror goes, manage your inventory space as necessary. Whether it's upgrading, selling, or tossing wepaons and armor, make it count! Space and resources are limited!</p>
-                    </SPAN_1_OF_2>
-                </Row>
             </StyledGameSection>
             <StyledImageSection>
                 <StyledShowCase1 className='clearfix'>
@@ -88,7 +125,7 @@ const PE1Gameplay = () => {
     )
 }
 
-const quote = {
+const description = {
     hidden: { opacity: 1 },
     visible: {
         opacity: 1,
