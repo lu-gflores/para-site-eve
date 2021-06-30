@@ -2,15 +2,18 @@
 
 ## Description
 
-A homage site built in React that contains content based on the cult Playstation 1 classic Parasite Eve
+A homage site built in React that contains content based on the cult Playstation 1 classics Parasite Eve
+
+![Demo of Parasite Eve game site](./src/img/site.gif)
 
 Demo: To Be added
 
 Tech Used:
 
-- [styled-components](https://styled-components.com/)
-- [AOS/Animate On Scroll](https://michalsnik.github.io/aos/)
 - [React-Router-DOM](https://reactrouter.com/)
+- [styled-components](https://styled-components.com/)
+- [Framer-Motion](https://michalsnik.github.io/aos/)
+- [react-interaction-observer](https://www.npmjs.com/package/react-intersection-observer)
 
 # Getting Started with Create React App
 
