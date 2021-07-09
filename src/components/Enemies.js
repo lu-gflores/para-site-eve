@@ -31,7 +31,7 @@ const Enemies = () => {
                 </Row>
                 <Row>
                     <p>Neo-Mitochondrial Creatures (NMCs) are the series main enemies, each behaving differently in terms of attack, defense, and style. They are mutated animals or other lifeforms
-                that are taken over by their modified mitochondria. They first appear and wreak havoc in New York City after coming into contact with Eve in the first game and reappear again in Dryfield in the second game, only they are altered.</p>
+                        that are taken over by their modified mitochondria. They first appear and wreak havoc in New York City after coming into contact with Eve in the first game and reappear again in Dryfield in the second game, only they are altered.</p>
                 </Row>
                 <Row>
                     <h2>Parasite Eve NMCs</h2>
@@ -72,7 +72,7 @@ const Enemies = () => {
                         <h1>Spider Woman</h1>
                     </SPAN_1_OF_4>
                 </Row>
-                <hr />
+
                 <Row>
                     <h2>Parasite Eve II NMCs</h2>
                 </Row>
@@ -120,8 +120,8 @@ const Enemies = () => {
 const StyledEnemiesSection = styled.section`
     line-height: 1.5;
     text-align: center;
-    background-color: #aad8d3;
-    color: #000;
+    background-color: #52616B;
+    color: #fff;
     h2 {
         margin: 25px 0 25px 0;
     }

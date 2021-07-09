@@ -147,7 +147,7 @@ const StyledGameSection = styled.section`
     line-height: 1.3;
     color: #000;
     /* background: linear-gradient(328deg, rgba(254,252,251,1) 10%, rgba(224,172,185,1) 31%, rgba(167,93,127,1) 48%, rgba(254,252,251,1) 87%); */
-    background-color: #00adb5;
+    background-color: #C9D6DF;
     p {
         text-align: center;
         padding: 1.5rem 0 1.5rem 0;

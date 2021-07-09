@@ -12,11 +12,12 @@ html {
     }
 }
 body {
-    background: #1b1b1b;
+    ${'' /* background: #1b1b1b; */}
+    background: #F0F5F9;
     ${'' /* overflow-x: hidden; */}
     ${'' /* font-family: 'Noto Sans', sans-serif; */}
     font-family: 'Century Gothic', sans-serif;
-    color: #fff;
+    color: #000;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;

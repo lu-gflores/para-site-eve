@@ -27,10 +27,7 @@ const StyledHeader = styled.header`
     height: 85vh;
     ::before {
         content: '';
-        background: linear-gradient(171deg, rgba(187,190,187,0.3) 17%, 
-            rgba(104,170,157,0.5) 54%, 
-            rgba(213,219,215,0.7) 86%), 
-            url(${gameplayBanner});
+        background: linear-gradient(171deg, rgba(0,0,0,0.3) 17%, rgba(0,0,0,0.3) 54%), url(${gameplayBanner});
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -45,6 +42,7 @@ const StyledHeader = styled.header`
         text-align: center;
         font-size: 56px;
         opacity: 0.85;
+        color: #fff;
     }
 
 `

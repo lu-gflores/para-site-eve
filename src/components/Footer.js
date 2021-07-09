@@ -31,6 +31,12 @@ const Footer = () => {
 const StyledFooter = styled.footer`
     padding: 50px;
     font-size: 80%;
+    background: #1E2022;
+    color: #fff;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
     p, a {
         margin-top: 30px;
         text-align: center;
@@ -40,7 +46,7 @@ const StyledLinks = styled.a`
     margin: 0 1.5rem 0 1.5rem;
     color: white;
     :hover {
-        color: grey;
+        color: #52616B;
     }
     i {
         padding: 0 10px;

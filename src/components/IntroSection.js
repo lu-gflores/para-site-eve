@@ -10,7 +10,7 @@ import eve2 from '../img/eve2.jpg'
 
 const headLine = 'Experience the classic horror RPG'
 const subtitleLine = 'Experience the duology of Aya Brea who possesses abnormal abilities due to changes in her mitochondria.'
-const gameHeadLine = 'Parasite Eve I & Parasite Eve II'
+
 
 const IntroSection = () => {
     return (
@@ -148,7 +148,8 @@ const StyledIntro = styled.section`
 `
 const StyledDuo = styled.section`
     line-height: 1.5;
-    background: linear-gradient(171deg, rgba(187,190,187,1) 17%, rgba(104,170,157,0.9612219887955182) 54%, rgba(213,219,215,1) 86%);
+    /* background: linear-gradient(171deg, rgba(187,190,187,1) 17%, rgba(104,170,157,0.9612219887955182) 54%, rgba(213,219,215,1) 86%); */
+    background: #C9D6DF;
     color: #000;
     h2,h3 {
         font-family: 'Century Gothic', sans-serif;

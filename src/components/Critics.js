@@ -90,6 +90,7 @@ const StyledCritics = styled.section`
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    color: #fff;
 `
 const StyledText = styled.div`
     line-height: 1.5;

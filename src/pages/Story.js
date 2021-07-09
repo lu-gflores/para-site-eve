@@ -40,6 +40,7 @@ const StyledHeader = styled.header`
         left: 0px;
     }
     h1 {
+        color: #fff;
         position: relative;
         text-align: center;
         font-size: 56px;

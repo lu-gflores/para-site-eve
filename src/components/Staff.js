@@ -102,6 +102,7 @@ const StyledStaffSection = styled.section`
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
+    color: #fff;
     h1 {
         text-align: center;
     }
