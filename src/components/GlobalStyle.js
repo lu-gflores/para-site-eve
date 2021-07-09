@@ -7,6 +7,15 @@ const GlobalStyle = createGlobalStyle`
 }
 html {
     overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #52616B;
+    }
+    &::-webkit-scrollbar-track{
+        background: #fff;
+    }
     @media (max-width: 1700px){
         font-size: 75%;
     }
