@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, SPAN_1_OF_2 } from '../styles'
+import { Row, SPAN_1_OF_2, SPAN_1_OF_4 } from '../styles'
+import sonyLogo from '../img/sony.png'
+import ps1Logo from '../img/Playstation_logo.svg'
+import squaresoftLogo from '../img/Squaresoft_Logo.svg'
 
 const Footer = () => {
     return (
@@ -18,7 +21,11 @@ const Footer = () => {
                     </StyledLinks>
                 </SPAN_1_OF_2>
                 <SPAN_1_OF_2>
-                    <p>Sample Text</p>
+                    <StyledLogos>
+                        <img src={squaresoftLogo} alt='Squaresoft' />
+                        <img src={ps1Logo} alt='Playstation 1' />
+                        <img src={sonyLogo} alt='Sony Computer Entertainment' />
+                    </StyledLogos>
                 </SPAN_1_OF_2>
             </Row>
             <Row>
@@ -51,6 +58,12 @@ const StyledLinks = styled.a`
     i {
         padding: 0 10px;
         font-size: 2.5rem;
+    }
+`
+const StyledLogos = styled.div`
+    img{
+        height: 65px;
+        width: 120px;
     }
 `
 
